@@ -13,5 +13,6 @@ namespace ASPNETMOD192.Data
 
         public DbSet<Client> Clients { get; set; } = default!;// tenta que exista uma
                                                               // tabela e inser os dados, tenta criar uma instancias com valores pardão
+        public DbSet<Staff> Staff { get; set; } = default!;
     }
 }
