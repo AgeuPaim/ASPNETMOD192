@@ -1,14 +1,10 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿
 
 @model ASPNETMOD192.Models.Client
 
-@*
-    Teste de Comentário
-*@
+<h1>Create New Client</h1>
+
+
  <div class="row">
 
      <div class="col-4">
@@ -16,76 +12,70 @@
 
          <form asp-action="Create">
 
-             <div class="from-group">
+            <div class="form-group">
 
                  <label asp-for="Name" class="form-label"></label>
                  <input asp-for="Name" class="form-control" />
 
              </div>
 
-            <div class="from-group">
+            <div class="form-group">
 
                 <label asp-for="Birthday" class="form-label"></label>
                 <input asp-for="Birthday" class="form-control" />
 
             </div>
 
-            <div class="from-group">
+            <div class="form-group">
 
-                <label asp-for="Addres" class="form-label"></label>
-                <input asp-for="Addres" class="form-control" />
+                <label asp-for="Address" class="form-label"></label>
+                <input asp-for="Address" class="form-control" />
 
             </div>
 
-            <div class="from-group">
+            <div class="form-group">
 
                 <label asp-for="VATNumber" class="form-label"></label>
                 <input asp-for="VATNumber" class="form-control" />
 
             </div>
 
-            <div class="from-group">
+            <div class="form-group">
 
                 <label asp-for="AdmissionDate" class="form-label"></label>
                 <input asp-for="AdmissionDate" class="form-control" />
 
             </div>
 
-            <div class="from-group">
+            <div class="form-group">
 
                 <label asp-for="DeactivationDate" class="form-label"></label>
                 <input asp-for="DeactivationDate" class="form-control" />
 
             </div>
 
-            <div class="from-group">
+            <div class="form-groupp">
 
                 <label asp-for="CellPhoneNumber" class="form-label"></label>
                 <input asp-for="CellPhoneNumber" class="form-control" />
 
             </div>
 
-            <div class="from-group">
+            <div class="form-group">
 
                 <label asp-for="Email" class="form-label"></label>
                 <input asp-for="Email" class="form-control" />
 
             </div>
 
-            <div class="from-group">
+            <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
 
 
 
-
-
-
-
-
          </form>
+
      </div>
-
-
 
  </div>

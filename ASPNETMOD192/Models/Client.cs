@@ -14,18 +14,20 @@ namespace ASPNETMOD192.Models
         public DateOnly Birthday { get; set; }
 
         [StringLength(100)]//Limitar a quantidade de caracteres a 100
-        public string Addres { get; set; }
+        public string Address { get; set; }
 
         [Required]
+        [Display(Name = "VAT #")]
         public string VATNumber { get; set; }
 
         public DateTime AdmissionDate { get; set; }
 
         public DateTime DeactivationDate { get; set;}
 
+        [Display(Name ="Cellphone")]
         public string? CellPhoneNumber { get; set; }
 
-        [DataType(DataType.EmailAddress)]
+        [EmailAddress]
         [Required]
         public string Email { get; set; }
 
